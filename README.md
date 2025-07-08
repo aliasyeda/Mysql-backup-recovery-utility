@@ -34,10 +34,9 @@ Useful for anyone learning database administration or practicing disaster recove
 
 ## ✅ Steps Performed
 
-### 1. Created Sample Database
-```sql
-CREATE DATABASE backup_demo;
-USE backup_demo;
+1. Created Sample Database
+2. CREATE DATABASE backup_demo;
+   USE backup_demo;
 
 CREATE TABLE employees (
   emp_id INT PRIMARY KEY,
@@ -51,6 +50,7 @@ INSERT INTO employees VALUES
 (3, 'Ahmed', 'Manager');
 
 2. Exported the Backup
+
 Used Server > Data Export
 
 Chose Dump Structure and Data
@@ -80,7 +80,8 @@ Execute the script in MySQL Workbench
 Data will be restored into the new database
 
 📌 Author
-This project was created to demonstrate practical knowledge in database backup and recovery using MySQL.
+ 
+ This project was created to demonstrate practical knowledge in database backup and recovery using MySQL.
 
 
 
