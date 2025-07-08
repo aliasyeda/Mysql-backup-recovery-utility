@@ -34,38 +34,34 @@ Useful for anyone learning database administration or practicing disaster recove
 
 ## ✅ Steps Performed
 
-1. Created Sample Database
-2. CREATE DATABASE backup_demo;
-   USE backup_demo;
+1.Created Sample Database
+  CREATE DATABASE backup_demo;
+  USE backup_demo;
 
-CREATE TABLE employees (
+  CREATE TABLE employees (
   emp_id INT PRIMARY KEY,
   emp_name VARCHAR(100),
   position VARCHAR(100)
-);
+   );
 
-INSERT INTO employees VALUES
-(1, 'Samia', 'Developer'),
-(2, 'Ali', 'Designer'),
-(3, 'Ahmed', 'Manager');
+  INSERT INTO employees VALUES
+  (1, 'Samia', 'Developer'),
+  (2, 'Ali', 'Designer'),
+  (3, 'Ahmed', 'Manager');
 
-2. Exported the Backup
+2.Exported the Backup
+  Used Server > Data Export
+  Chose Dump Structure and Data
+  Exported to: employees_backup_mysql.sql
 
-Used Server > Data Export
+3.Simulated Failure
+  DROP TABLE employees;
+   
+4.Created New Database and Restored
 
-Chose Dump Structure and Data
-
-Exported to: employees_backup_mysql.sql
-
-3. Simulated Failure
-
-DROP TABLE employees;
-
-4. Created New Database and Restored
-
-CREATE DATABASE backup_restore_demo;
-USE backup_restore_demo;
-Opened .sql backup file
+5.CREATE DATABASE backup_restore_demo;
+  USE backup_restore_demo;
+  Opened .sql backup file
 
 Executed it to restore the employees table and its data
 
