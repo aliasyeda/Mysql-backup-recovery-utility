@@ -75,7 +75,10 @@ Execute the script in MySQL Workbench
 
 Data will be restored into the new database
 
-📌 Author
+ ## 📌 Author
+
+Developed by [Syeda Alia Samia](https://github.com/aliasyeda)
+
  
  This project was created to demonstrate practical knowledge in database backup and recovery using MySQL.
 
